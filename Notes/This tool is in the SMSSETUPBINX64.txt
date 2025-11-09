@@ -1,0 +1,60 @@
+This tool is in the SMSSETUP\BIN\X64 folder on the Configuration Manager installation media.
+Open a command line, and run extadsch.exe.
+ Tip
+Run this tool from a command line to view feedback while it runs.
+To verify that the schema extension was successful, review extadsch.log in the root of the system drive.
+
+Activity :Make a doc with screenshot on Planning and Deploying a Stand-Alone Primary Site &Extending the Active Directory Schema in sccm
+
+
+What is Updates and Servicing, Service Connection Point, SCP Modes of operation
+SCP and telemetry data upload
+Performing Post-Setup Configuration Tasks /Verifying the Installation/Status Messages/Configuring Boundaries and Boundary Groups/Installing site System Roles
+Overview of the Configuration Manager administrative tools
+Tools for monitoring and troubleshooting a Configuration Manager site.
+Introduction to queries and reports
+Brief introduction to PowerShell, Discovering CMDLETS, Help File, Get-member CMDLET.
+Using Windows PowerShell with Configuration Manager
+Using Configuration Manager Service Manager to manage components.
+Monitoring site and component status
+
+
+Managing computers devices in the enterprise
+Preparing the management infrastructure to support desktop devices.
+Managing the Configuration Manager Client
+Managing inventory for PCs and applications.
+
+
+Overview of the Configuration Manager Client /Supported Clients
+Deploying Configuration Manager Clients /Overview of the Client Installation Process
+Client Push/Software Update Point/Group Policy/Manual/Logon Script/Software Distribution
+Managing Client Agents
+Configuring and Monitoring Client Status
+Client Activity, Client Health
+Client Online Status
+Health attestation for System Centre Configuration Manager
+Client health on Trustworthy BIOS, TPM, and boot software configurations enabled.
+Managing Custom Client Settings
+
+Overview of Inventory Collection
+Configuring Hardware /software Inventory
+Discussion on WMI, WMI tools
+Deep dive into the inventory process
+Extending hardware inventory IDMIF vs NOIDMIF
+
+
+Milestone Assessment 2 (Day 11 to Day 19 Topics Covered)- Today 5:30 PM to 6:30 PM
+
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 495 196 285 234 7
+Passcode: am6zv6Xb
+
+Join on a video conferencing device
+Tenant key: wiproconcca@m.webex.com
+Video ID: 137 019 155 7
+More info
+______________________________
+
+
+platformsupport@rpsconsulting.in

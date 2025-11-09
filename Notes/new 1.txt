@@ -1,0 +1,234 @@
+PS
+here r the all command mentioned in pdf in one go
+Get-Process
+Get-Service
+Stop-Service
+Start-Service
+Get-EventLog
+Get-Item
+Set-Location
+Copy-Item
+Move-Item
+Remove-Item
+Rename-Item
+Get-Content
+Set-Content
+Select-String
+Get-ADUser
+New-ADUser
+Get-ComputerInfo
+Set-Date
+Where-Object
+Sort-Object
+Set-ExecutionPolicy
+Get-Help
+Get-ChildItem
+Remove-Item
+Test-Connection
+Get-NetIPAddress
+Get-Command
+
+
+Write-Host "=== Checking for processes consuming more than 100 CPU seconds ==="
+Get-Process |
+    Where-Object { $_.CPU -gt 100 } |
+    Select-Object Name, CPU, Id |
+    Sort-Object CPU -Descending |
+    Format-Table -AutoSize
+
+Write-Host "`n=== Cleaning Temporary Files ==="
+$TempPath = "$env:TEMP\*"
+
+# Remove all temp files, ignoring errors for locked/in-use files
+Remove-Item -Path $TempPath -Recurse -Force -ErrorAction SilentlyContinue
+
+Write-Host "`nTemporary files cleaned successfully."
+
+# This script checks for high CPU processes and cleans temporary files.
+
+Get-NetIPConfiguration > "FilePath"
+Maam we can do this thing in this way.
+
+| Out-File D:\aa\wiprofiledwc\netipdata
+
+Get-NetIPConfiguration | Out-File D:\aa\wiprofiledwc\netipdata
+Get-PsDrive | Out-File D:\aa\wiprofiledwc\todayprocessdata  -Append
+
+
+Get-NetIPConfiguration | Out-File -FilePath D:\aa\wiprofiledwc\netfileipconfigs
+Get-Service| Out-File D:\aa\wiprofiledwc\processfile -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\wipropowershell\datefilea.txt -Append
+Get-Command | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\Demo\datefile.txt -Append
+Get-NetIPConfiguration | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\Demo\datefile.txt -Append
+Get-ChildItem | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\wipropowershell\datafiles.txt -Append
+Get-Service | Out-File D:\Demo\opfilecommands.txt -Append
+Get-Process
+
+$name = Read-Host "Please enter your name"
+    Write-Host "Hello, $name!"
+	
+	$name = Read-Host "Please enter your name"
+    Write-Host "Hello, $name!"
+
+      $content = Get-Content -Path "D:\aa\wiprofiledwc\todayprocessdata"
+      Write-Host "Hello, $content!"
+	  
+	  Get-ChildItem | Format-Wide -Column 3
+	  
+	  Get-Process | Format-Table -Property Name, CPU, StartTime
+       Get-Service | Format-List -Property Name, Status, DisplayName
+      Get-ChildItem | Format-Wide -Column 3
+	  
+	  Powershell is an interpreter.
+	  
+	  $name = "John"
+    $age = 30
+    $job = "Software engineer"
+
+    "My name is {0} and I am {1} years old and working as $job" -f $name, $age ,$job
+	
+	 Get-Process | Sort-Object CPU -Descending | Select-Object -First 5 | Format-Table Name, CPU
+	 
+	 if we r specifying the $varName in the string itself then we don't need to mention it again in the -f parameter
+	 
+	 
+	 Get-PSDrive -PSProvider FileSystem
+
+
+
+Get-CimInstance Win32_OperatingSystem
+Get-Command Get-CimInstance
+Get-Help Get-CimInstance
+Import-Module BitsTransfer
+Get-Command Install-Module, Install-PSResource
+Get-Module
+Get-Module -ListAvailable
+Get-Command -Module <module-name>
+Get-Command -Module BitsTransfer
+Remove-Module BitsTransfer
+Get-Command Get-Date, Get-Help -All |
+    Select-Object -Property Name, CommandType, Module ,PSSnapIn
+    Remove-Item Function:Get-Date
+	
+	Assignment:Powershell cmdlets commands needs to be done everyone
+	
+	Introducing to Cmdlets
+The PowerShell Pipeline
+Key Cmdlets
+WMI & PowerShell
+Pipeline Filtering & Operators
+Input, Output & Formatting
+Scripting Overview
+Objects, Arrays, Variables
+Scope
+More Operators
+Scripting Constructs
+Modularization
+Understand basic platform value, concepts and usage
+
+
+et-CimClass *network* | Sort CimClassName
+Get-WmiObject -Class Win32_Keyboard
+Get-WmiObject
+Get-WmiObject -Namespace root -List | Out-File D:\Demo\Namespace.txt -Append 
+Get-WmiObject -Namespace root\cimv2 -List | Sort Name
+Get-WmiObject -Namespace root\CIMv2 -List | Out-File D:\Demo\cimv2.txt -Append 
+Get-WmiObject -Namespace root\cimv2 -List | Sort Name | Out-File D:\Demo\sortcimv2.txt -Append 
+Get-CimClass -Namespace root\CIMv2 | Sort CimClassName
+Get-WmiObject -Class CIM_Chip
+Get-WmiObject -ClassName CIM_InstalledOS
+Get-WmiObject -ClassName CIM_InstalledOS
+Get-CimInstance -ClassName Win32_LogicalDisk
+Get-CimInstance -Class Win32_LogicalDisk
+
+Get-WmiObject -Class Win32_LogicalDisk
+Get-WmiObject Win32_LogicalDisk
+Get-WmiObject -Class Win32_LogicalDisk -Filter "DriveType=3"
+Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3"
+Get-WmiObject -Query "SELECT * FROM Win32_LogicalDisk WHERE DriveType = 3"
+Get-CimInstance -Query "SELECT * FROM Win32_LogicalDisk WHERE DriveType = 3"
+
+
+Get-NetIPConfiguration | Out-File D:\wipropowershell\datafiles.txt -Append
+Get-NetIPConfiguration | Out-File -FilePath D:\aa\wiprofiledwc\netfileipconfigs
+Get-Service| Out-File D:\aa\wiprofiledwc\processfile -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\wipropowershell\datefilea.txt -Append
+Get-Command | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\Demo\datefile.txt -Append
+Get-NetIPConfiguration | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\Demo\datefile.txt -Append
+Get-ChildItem | Out-File D:\Demo\datefile.txt -Append
+Get-PSDrive -PSProvider FileSystem | Out-File D:\wipropowershell\datafiles.txt -Append
+Get-Service | Out-File D:\Demo\opfilecommands.txt -Append
+Get-Process
+
+
+#THIS COMMAND USED FOR
+
+$name = Read-Host "please enter name"
+Write-Output "Helo ,lets welcome $name"
+
+
+    $name = "John"
+    $age = 30
+    "My name is {1} and I am {0} years old" -f $name, $age
+
+     Get-Process | Sort-Object CPU -Descending | Select-Object -First 5 | Select-Object Name, CPU
+
+     $fruits = "banana","apple"
+     $fruits[0]
+     $fruits+="kiwi"
+     $fruits[2]
+
+     #column names are objects in PS
+
+     $age = 20
+     if ($age -ge 22) {
+     write-Host "Age is greater"
+     }
+
+      $age = 25
+    if ($age -ge 18) {
+        Write-Host "Adult"
+    } elseif ($age -ge 13) {
+        Write-Host "Teenager"
+    } else {
+        Write-Host "Child"
+    }
+	
+	
+	Get-Service | Get-Member | Out-File D:\Demo\opfilecommands.txt -Append
+Get-Date | Get-Member | Out-File D:\Demo\opfilecommands.txt -Append
+Get-Date | Select-Object –Property Second
+Get-Date | Select-Object –Property TimeofDay
+Get-Command *hotfix* Out-File D:\Demo\opfilecommands.txt -Append
+
+
+Get-Hotfix | Get-Member
+
+
+00 -gt 10 
+500 -le 100
+'hello' -eq 'HELLO'
+'hello' -ceq 'HELLO'  
+Get-Service | Where status -ne Running | Out-File D:\Demo\a.txt -Append
+Get-Service | Where status -ne Running 
+Get-process | Where CPU -gt 100
+Get-process -Name EXCEL | Stop-Process
+Stop-process -Name 
+Get-Service | ForEach Status
+Get-Service | ForEach Displayname
+ Get-EventLog –List
+ Get-EventLog –List | Where Log –eq 'System'
+ Get-EventLog –List | Where Log –eq 'System' 
+ Get-Process | ConvertTo-HTML
+ Get-Process | ConvertTo-HTML | Out-File D:Demo\htmldata.txt
+ 
+
+
+
+Subbiah@rpsconsulting.in
+ 

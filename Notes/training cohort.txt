@@ -1,0 +1,114 @@
+When you are comparing EXE : Executable /Software/Application with : Old format /Legacy App
+MSI :Microsoft Installer /Software/Application: filezilla -software name ---filezilla.msi /adobe.msi /winrar.msi 
+
+1) Installtion commandline : msiexec.exe /i "adobe acrobat_reader.msi"
+2) uninstalltion commandline: msiexec.exe /x "adobe acrobat_reader.msi" or msiexec.exe /x "Product Code"
+3) Repair : msiexec.exe /f "adobe acrobat_reader.msi"
+4) Auto update
+5) Shorcuts
+6) Rollback 
+7) Self healing
+8) Version control
+
+Registry : HKCR ,HKCU,HKLM
+
+When we talk about software /what are the feild we look :  Name + Publisher+ Date installed+ Size of app + Verdsion of app 
+: ARP 
+The path where app or software is installed --it is called as : instaldir
+Read access : USER : Admin
+write access: Admin
+modify access: Admin
+
+Any drivers ---hardware components --that also make entry in C:\Windows\system32
+
+appwiz.cpl : ARP (add and remove Program)
+
+
+Day 2 :-
+
+BSOD --Blue screen of Death --the OS crashes
+
+
+How to identify the given source is MSI or EXE ?
+Why it is imp?
+
+!) If you install 2-3 times the exe --it will get installed 2-3 times /
+But --if you install msi second time --it will give you option to repair or uninstall 
+
+Source Validation : It will confirm its msi or exe
+
+2) MSI always requires Windows installer service --running
+If you turn off  Windows installer service --MSI will not install 
+
+Why we need this Source validation:
+If there is exe which as a source client has gave you --you as a repackager -convert this in proper format .
+MAY BE THE exe IS wRAPPER  Means --inside it is MSI and for compressing or reducing file size --they made output as exe.
+ex: acrobat-Reader.exe --it contains acrobat-reader.msi inside it -size is 13 MB 
+
+Tools which will do application Repackaging: 
+
+Admin Studio --Flexera 
+
+Repackager --Use to convert exe to msi 
+Instalshield/orca -- If source is MSI --It will convert MSi to MST (Microsoft transform)
+---------------------------------
+
+Packaging VS Repackaging:
+
+Development -Packager --  Compile all source code --add dll,registry ,file folders ,shortcuts ---Use tool -Output is EXE or MSI
+Input:    all source code --add dll,registry ,file folders ,shortcuts                        Output : EXE or MSI
+
+
+Repackager -reverse engg --
+Input : Output of developer /EXE or MSI   Output : EXE --MSI         MSI --MST
+--------------------------------------------------------------
+
+Lunguage --EN-US - 1033 
+Software architecture ---
+MS-Office --Product :Product - product code --GUID -- Unique in whole world --
+Multiple Features --- Excel,power point,Word ,project,visio
+Multiple Components ---Component Rule ---> One file/folder/registry/shorcut --can only be tagged to one component 
+File,Folder,registry,DLL,Shortcuts
+
+Do with : WinRAR.7zip,irfanview,spotify
+Assignment 3: Create tech review document with screenshot of entire steps for 2 application. Start time: 1.10 PM End time : 3.30 PM --Lunch time : 2 PM to 3 PM
+
+
+Assignment No 4: what is registry , how many types of registry. Which registry path is used for finding product code. + Register a dll steps with screenshots
+
+https://forms.office.com/pages/responsepage.aspx?id=MsdlZVMW_k-504Ck8cDCXTPuW7CLtGFCoq6vpc3DI61UNDk1M0pWUTZUTjlFRlIwUEQwM0FFRks5Uy4u&route=shorturl
+
+
+https://survey.zoho.com/survey/thankyou/thank-default.html?lang=en
+
+
+
+
+
+ aug
+
+
+New-ADTTemplate -Destination C:\\Temp\\MyAppDeployment -Name "MyOldAppDeployment" -Version 3.
+To create a deployment using the PSADT v4 native template, you can use the command New-ADTTemplate -Destination C:\\Temp\\MyAppDeployment -Name
+
+1. Understanding PSAppDeployToolkit and Templates:
+
+2. Using the Template Script (Deploy-Application.ps1):
+3. Creating a New Deployment Using Templates:
+4. Additional Resources:
+5. Customizing the Template Script:
+
+Template Script in ps app deploy toolkit
+
+Execute-MSI -Action Install -Path "C:\path\to\your.msi" -DeployMode Silent
+ Execute-MSI -Action Uninstall -Path "{GUID of the product}"
+Start-Process -FilePath "C:\Windows\System32\msiexec.exe" -ArgumentList "/x{GUID of the product} /qn" -Wait
+
+14 aug
+PowerShell and MSIX involved operations and troubleshooting
+Install location and Troubleshooting logs
+MSIX Package testing process & Troubleshooting
+Different way of Publishing & Troubleshooting
+Most used troubleshooting tools for MSIX Packages
+
+
