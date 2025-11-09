@@ -1,0 +1,46 @@
+Q1.
+In Application Packaging, which method ensures that a registry or file-based configuration is reapplied for every new user login after a fresh install?
+A) Logon Scripts
+B) Scheduled Tasks
+C) Active Setup Versioning.
+D) MSI Custom Actions
+
+
+C) Active Setup Versioning
+
+Active Setup is specifically used to apply registry/file-based configurations per user after install, ensuring settings are re-applied for every new login.
+
+
+Q2.
+When handling MSI packaging, what is the correct difference between User Context and System Context?
+A) User Context installs applications for all users, while System Context installs only for the logged-in user
+B) User Context installs applications only for the logged-in user, while System Context installs for all users on the system.
+C) Both contexts install applications system-wide, but only System Context requires admin privileges
+D) User Context always bypasses permissions, while System Context enforces them
+
+
+B) User Context installs applications only for the logged-in user, while System Context installs for all users on the system.
+
+User Context → limited to the current logged-in user (stored under HKCU, user profile paths).
+
+System Context → application is installed machine-wide for all users (stored under HKLM, Program Files, etc.).
+
+
+
+
+Q3.
+Which of the following Windows tools is primarily used to monitor and troubleshoot real-time registry and file system activities during MSI installation?
+A) Process Explorer
+B) RegMon.
+C) AutoLogon
+D) SysMon
+
+
+
+B) RegMon
+
+RegMon (Registry Monitor) was used earlier to track registry activity.
+
+Later merged with FileMon into Process Monitor (ProcMon), which is the modern tool.
+
+From your given options, RegMon is the correct one for registry/file troubleshooting in the MSI context.
